@@ -1,5 +1,7 @@
 package org.zufedfc.common.bean;
 
-public interface DataOut {
+import java.io.Closeable;
+
+public interface DataOut extends Closeable {
     public void setPath(String path);
 }

@@ -1,6 +1,6 @@
 package org.zufedfc.common.bean;
 
-public class Data implements Val{
+public abstract class Data implements Val{
 
     public String content;
 
@@ -8,7 +8,12 @@ public class Data implements Val{
         this.content = content;
     }
     @Override
-    public Object getVal() {
-        return null;
+    public String getVal() {
+        return content;
+    }
+
+    @Override
+    public void setVal(Object val) {
+        content = (String)val;
     }
 }

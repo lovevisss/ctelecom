@@ -14,4 +14,9 @@ public enum Names implements Val {
     public Object getVal() {
         return name;
     }
+
+
+    public void setVal(Object val) {
+        name = (String)val;
+    }
 }
