@@ -34,8 +34,8 @@ public class Contact extends Data {
         }
         String[] values = content.split(",");
 //        System.out.println(values[0]+ "++"+values[1]);
-        setName(values[1]);
-        setTel(values[0]);
+        setName(values[0]);
+        setTel(values[1]);
 //        super.setVal(val);
     }
 
