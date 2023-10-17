@@ -57,20 +57,12 @@ public class LocalFileProducer implements Producer {
                 long duration = (long)(Math.random() * 3600);
                 String durationString = NumberUtil.formatNumber(duration,4);
                 System.out.println("通话时长:" + durationString + "秒");
-                flag = false;
 //        生成通话记录
                 Calllog callLog = new Calllog(call1.getTel(),call2.getTel(),callTimeString,durationString);
                 System.out.println(callLog);
 //        将通话记录输出到指定文件中
-//            try {
-//                String line = in.readLine();
-//                if (line == null){
-//                    break;
-//                }
-//                System.out.println(line);
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
+                out.write(callLog);
+                Thread.sleep(500);
             }
         }catch (Exception e){
             e.printStackTrace();

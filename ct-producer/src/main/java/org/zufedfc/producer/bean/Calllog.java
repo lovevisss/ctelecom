@@ -50,11 +50,10 @@ public class Calllog {
 
     @Override
     public String toString() {
-        return "Calllog{" +
-                "call1='" + call1 + '\'' +
-                ", call2='" + call2 + '\'' +
-                ", calltime='" + calltime + '\'' +
-                ", duration='" + duration + '\'' +
-                '}';
+        return
+                call1 + "\t" +
+                call2 + "\t" +
+                calltime + "\t" +
+                duration;
     }
 }
